@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang menu nâng cao của Herlys War với nhiều tính năng và hiệu ứng hấp dẫn.">
+    <meta name="author" content="QuanHau2010">
+    <title>HERLYS WAR - MENU VIP</title>
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        }
+
+        /* Background Animation */
+        body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00, #0072ff);
+        background-size: 400% 400%;
+        animation: gradientAnimation 15s ease infinite;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+        
+        @keyframes gradientAnimation {
+        0% { background-position: 0% 50%; }
+        25% { background-position: 50% 0%; }
+        50% { background-position: 100% 50%; }
+        75% { background-position: 50% 100%; }
+        100% { background-position: 0% 50%; }
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 20px;
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            position: relative;
+            color: #ffffff;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #ff416c; /* Static color */
+        animation: bounceIn 2s ease-out infinite, textShake 1.5s ease-in-out infinite alternate;
+        }
+        
+        @keyframes bounceIn {
+        0% {
+        transform: scale(0.5);
+        opacity: 0;
+        }
+        60% {
+        transform: scale(1.1);
+        opacity: 1;
+        }
+        100% {
+        transform: scale(1);
+        opacity: 1;
+        }
+        }
+        
+        @keyframes textShake {
+        0%, 100% {
+        transform: translateX(0);
+        }
+        25% {
+        transform: translateX(-5px);
+        }
+        50% {
+        transform: translateX(5px);
+        }
+        75% {
+        transform: translateX(-5px);
+        }
+        }
+
+
+
+        .button {
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 30px;
+        background: linear-gradient(90deg, #ff416c, #ff4b2b, #ffcc00, #0072ff);
+        background-size: 400% 400%;
+        border-radius: 25px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1rem;
+        transition: background 0.4s ease, transform 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+        animation: gradientAnimation 5s ease infinite;
+        }
+        
+        @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        25% {
+        background-position: 50% 0%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        75% {
+        background-position: 50% 100%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+        
+        .button:hover {
+        background: linear-gradient(90deg, #0072ff, #ff416c, #ff4b2b, #ffcc00);
+        background-size: 400% 400%;
+        transform: scale(1.1);
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.6);
+        animation: none; /* Stop animation on hover for a more dynamic effect */
+        }
+        
+        .button:active {
+        transform: scale(0.95);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .counter {
+        margin-top: 20px;
+        padding: 20px;
+        background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00, #0072ff);
+        background-size: 400% 400%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        font-size: 1.4rem;
+        color: #ffffff;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        animation: gradientAnimation 5s ease infinite, bounceIn 2s ease-out;
+        }
+        
+        @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+        
+        @keyframes bounceIn {
+        0% {
+        transform: scale(0.5);
+        opacity: 0;
+        }
+        60% {
+        transform: scale(1.1);
+        opacity: 1;
+        }
+        100% {
+        transform: scale(1);
+        opacity: 1;
+        }
+        }
+        #counter-container img {
+            width: 120px;
+            height: 25px;
+            border: 0;
+        }
+
+        .effects-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .counter {
+        margin-top: 20px;
+        padding: 20px;
+        background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00, #0072ff);
+        background-size: 400% 400%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        font-size: 1.4rem;
+        color: #ffffff;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        animation: gradientAnimation 5s ease infinite, bounceIn 2s ease-out;
+        }
+        
+        @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+        
+        @keyframes bounceIn {
+        0% {
+        transform: scale(0.5);
+        opacity: 0;
+        }
+        60% {
+        transform: scale(1.1);
+        opacity: 1;
+        }
+        100% {
+        transform: scale(1);
+        opacity: 1;
+        }
+        }
+
+        .toggle-theme-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+            border-radius: 25px;
+            color: #ffffff;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.4s ease, transform 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .toggle-theme-button:hover {
+            background: linear-gradient(135deg, #0072ff, #00c6ff);
+            transform: scale(1.05);
+        }
+
+        .toggle-theme-button:active {
+            transform: scale(0.95);
+        }
+
+        .animated-text {
+            margin-top: 25px;
+            font-size: 1.4rem;
+            color: #ffffff;
+            animation: textBlink 1.5s step-start infinite;
+        }
+
+        @keyframes textBlink {
+
+            0%,
+            50%,
+            100% {
+                opacity: 1;
+            }
+
+            25%,
+            75% {
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+
+            .button,
+            .toggle-theme-button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+
+            .effect-item {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+            .counter {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
+        }
+
+        /* Dark Mode Styles */
+        .dark-mode {
+        background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00, #0072ff);
+        background-size: 400% 400%;
+        animation: gradientAnimation 10s ease infinite;
+        }
+        
+        /* Light Mode Styles */
+        .light-mode {
+        background: linear-gradient(45deg, #ff416c, #ff4b2b, #ffcc00, #0072ff);
+        background-size: 400% 400%;
+        animation: gradientAnimationLight 10s ease infinite;
+        }
+        
+        @keyframes gradientAnimation {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+        
+        @keyframes gradientAnimationLight {
+        0% {
+        background-position: 0% 50%;
+        }
+        50% {
+        background-position: 100% 50%;
+        }
+        100% {
+        background-position: 0% 50%;
+        }
+        }
+    </style>
+</head>
+
+<body class="dark-mode">
+    <div class="container">
+        <h1 class="title">HERLYS WAR - VIP MENU</h1>
+        <p class="fancy-text">Chào mừng bạn đến với menu VIP của Herlys War! Khám phá các tính năng và hiệu ứng mới
+            nhất.</p>
+
+        <a href="https://keyherlyswar.x10.mx/fakebill.php" class="button">Web Fake Bill Ngân Hàng</a>
+        <a href="https://keyherlyswar.x10.mx/enc.html" class="button">Web Encode Các Loại Mã</a>
+        <a href="https://keyherlyswar.x10.mx/thongtinthanhtoan.html" class="button">Thông Tin Thanh Toán</a>
+        <a href="https://keyherlyswar.x10.mx/profile.html" class="button">Thông Tin Liên Hệ</a>
+        <a href="https://keyherlyswar.x10.mx/profile1.html" class="button">Thông Tin Liên Hệ Ver2</a>
+        <a href="https://keyherlyswar.x10.mx/key.html?=" class="button">Web Key</a>
+
+        <div class="counter">
+            <p>Số lượng truy cập hiện tại:</p>
+            <div id="counter-container">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=16274848&style=0038&nbdigits=5&type=page&initCount=100" alt="Counter">
+            </div>
+        </div>
+
+        <script src="//thanhdieu.com/files/autoplay-music@v1.0.0.js" data-n-g='{"made": "thanhdieu"}'></script>
+
+        <div class="effects-container">
+            <div class="effect-item">
+                <h2>Hiệu ứng 1</h2>
+                <p>Khám phá các tính năng hấp dẫn.</p>
+            </div>
+            <div class="effect-item">
+                <h2>Hiệu ứng 2</h2>
+                <p>Trải nghiệm giao diện mới và thú vị.</p>
+            </div>
+            <div class="effect-item">
+                <h2>Hiệu ứng 3</h2>
+                <p>Đưa ra nhiều tùy chọn cá nhân hóa.</p>
+            </div>
+        </div>
+
+        <a href="#" class="toggle-theme-button" id="toggle-theme">Chuyển sang Nền Sáng</a>
+        <p class="animated-text">Văn bản nhấp nháy!</p>
+    </div>
+
+    <script>
+        // Cập nhật số lượng truy cập
+        function updateCounter() {
+            fetch('counter.txt')
+                .then(response => response.text())
+                .then(data => {
+                    let count = parseInt(data);
+                    count = isNaN(count) ? 0 : count;
+                    document.getElementById('count').textContent = count;
+                    // Tăng số lượng truy cập lên 1
+                    fetch('counter.txt', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'text/plain' },
+                        body: (count + 1).toString()
+                    });
+                })
+                .catch(err => console.error('Error fetching counter:', err));
+        }
+        updateCounter(); // Cập nhật số lượng truy cập ngay khi tải trang
+
+        // Thay đổi giữa nền sáng và tối
+        const toggleButton = document.getElementById('toggle-theme');
+        let isDarkMode = true;
+
+        toggleButton.addEventListener('click', () => {
+            if (isDarkMode) {
+                document.body.classList.add('light-mode');
+                document.body.classList.remove('dark-mode');
+                toggleButton.textContent = 'Chuyển sang Nền Tối';
+            } else {
+                document.body.classList.add('dark-mode');
+                document.body.classList.remove('light-mode');
+                toggleButton.textContent = 'Chuyển sang Nền Sáng';
+            }
+            isDarkMode = !isDarkMode;
+        });
+
+        // Hiệu ứng chuyển động cho hiệu ứng mục
+        const effects = document.querySelectorAll('.effect-item');
+        effects.forEach(effect => {
+            effect.addEventListener('click', () => {
+                effect.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    effect.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+
+</html>
