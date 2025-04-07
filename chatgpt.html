@@ -11,7 +11,8 @@
 <body class="bg-gray-50 flex flex-col h-screen">
 
     <!-- Thanh tiêu đề -->
-    <header class="bg-gradient-to-r from-indigo-500 to-blue-500 p-5 text-white text-3xl font-semibold shadow-lg shadow-indigo-500/50">
+    <header
+        class="bg-gradient-to-r from-indigo-500 to-blue-500 p-5 text-white text-3xl font-semibold shadow-lg shadow-indigo-500/50">
         Chat GPT - Herlys
     </header>
 
@@ -27,7 +28,12 @@
             Xóa Lịch Sử
         </button>
     </div>
-
+<!-- Chọn API -->
+    <div class="flex justify-center p-5 bg-white border-b shadow-sm">
+        <select id="apiSelect" class="p-3 rounded-lg border border-gray-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+            <option value="https://keyherlyswar.x10.mx/Apidocs/gpt-4o-pro.php?ask=">GPT-4o Pro</option>
+        </select>
+    </div>
     <!-- Khung chat -->
     <div id="chat" class="flex-1 p-5 overflow-y-auto space-y-5">
         <!-- Các tin nhắn sẽ hiển thị ở đây -->
@@ -106,7 +112,8 @@
             if (!currentChatName) {
                 currentChatName = text;
             }
-
+const apiSelect = document.getElementById('apiSelect');
+    const apiUrl = apiSelect.value; // Lấy URL từ select
             // Hiển thị tin nhắn người dùng
             appendMessage('Bạn', text, 'user');
             currentChatMessages.push({ sender: 'Bạn', text: text, className: 'user' });
@@ -118,7 +125,7 @@
 
             // Gửi request tới API
             try {
-                const response = await fetch('https://keyherlyswar.x10.mx/Apidocs/gpt-4o-pro.php?ask=' + encodeURIComponent(text));
+                const response = await fetch(apiUrl + encodeURIComponent(text));
                 const data = await response.json();
 
                 // Cập nhật tin nhắn trả lời từ bot
@@ -152,8 +159,6 @@
                     console.log("Đoạn chat này đã tồn tại trong lịch sử.");
                 }
             } catch (error) {
-                // Hiển thị lỗi nếu có
-                appendMessage('GPT', 'Đã xảy ra lỗi, vui lòng thử lại.', 'bot');
                 console.error('Error:', error);
             }
         });
