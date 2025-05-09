@@ -1,0 +1,644 @@
+<!--
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⠿⠛⢉⣉⣠⣤⣤⣤⣴⣦⣤⣤⣀⡉⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⠋⢁⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡀⠙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⡟⠁⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⠿⠂⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡟⠀⣼⣿⣿⡏⢉⣁⣀⣀⣤⣤⣄⠀⣴⣿⣿⡇⢠⣶⣶⠒⠲⡆⢀⠈⢿⣿⣿⣿⣿⣿⣿⣿
+⣿⠁⣼⣿⣿⣿⠀⢿⣿⣿⣏⣀⣹⠟⢀⣿⣿⣿⣷⡈⠛⠿⠃⢀⣠⣿⣆⠈⣿⣿⣿⣿⣿⣿⣿
+⡇⢠⣿⣿⣿⣿⣧⣀⠉⠛⠛⠉⣁⣠⣾⣿⣿⣿⣿⣿⣷⣶⠾⠿⠿⣿⣿⡄⢸⣿⣿⣿⣿⣿⣿
+⡇⢸⣿⣿⣿⣿⡿⠿⠟⠛⠛⠛⢉⣉⣉⣉⣉⣩⣤⣤⣤⣤⠀⣴⣶⣿⣿⡇⠀⣿⣿⣿⣿⣿⣿
+⠅⢸⣿⣿⣿⣷⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⢸⣿⣿⣿⠃⢸⣿⣿⣿⠛⢻⣿
+⣇⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠉⣿⡟⢀⣾⣿⠟⠁⣰⣿⣿⣿⡿⠀⠸⣿
+⣿⣆⠀⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠙⣠⣾⠟⠁⣠⣾⣿⣿⣿⣿⠀⣶⠂⣽
+⣿⣿⣷⣄⡈⠙⠻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⣴⠆⠀⠋⢀⣴⣿⣿⡿⠟⠛⠉⠀⢂⣡⣾⣿
+⣿⣿⣿⣿⣿⠇⢀⣄⣀⡉⠉⠉⠉⠉⠉⣉⠤⠈⢁⣤⣶⠀⠾⠟⣋⡡⠔⢊⣠⣴⣾⣿⣿⣿⣿
+⣿⣿⣿⣿⠏⢠⣿⣿⡿⠛⢋⣠⠴⠚⢉⣥⣴⣾⣿⣿⣿⠀⠴⠛⣉⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡏⢀⣿⣿⣯⠴⠛⠉⣠⣴⣾⣿⣿⣿⣿⣿⣿⣿⠀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⡟⠀⣼⣿⣿⣧⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⠃⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡟⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⠃⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱
+███████╗██╗░░░██╗░█████╗░██╗░░██╗
+██╔════╝██║░░░██║██╔══██╗██║░██╔╝
+█████╗░░██║░░░██║██║░░╚═╝█████═╝░
+██╔══╝░░██║░░░██║██║░░██╗██╔═██╗░
+██║░░░░░╚██████╔╝╚█████╔╝██║░╚██╗
+╚═╝░░░░░░╚═════╝░░╚════╝░╚═╝░░╚═╝
+██╗░░░██╗░█████╗░██╗░░░██╗
+╚██╗░██╔╝██╔══██╗██║░░░██║
+░╚████╔╝░██║░░██║██║░░░██║
+░░╚██╔╝░░██║░░██║██║░░░██║
+░░░██║░░░╚█████╔╝╚██████╔╝
+░░░╚═╝░░░░╚════╝░░╚═════╝░
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from betadash-api-swordslush.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 30 Jan 2025 17:46:32 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="https://www.facebook.com/Quanhau210">
+<meta name="description" content="API này được thiết kế đặc biệt cho mục đích giáo dục, giúp học sinh và giáo viên truy cập các công cụ và tài nguyên quý giá để nâng cao trải nghiệm học tập và giảng dạy. Thích hợp cho nghiên cứu học thuật và các hoạt động trong lớp học.">
+<meta property="og:description" content="Một API giáo dục được tạo ra để hỗ trợ học sinh và giáo viên trong việc cải thiện việc học và giảng dạy thông qua các công cụ và tài nguyên dễ tiếp cận.">
+<meta property="og:url" content="https://keyherlyswar.x10.mx:443/"/>
+        <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://i.imgur.com/s9CSOZ7.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+ <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta property="og:site_name" content="APIDOCS"/>
+  <meta name="theme-color" content="#13111C"/>
+<meta name='application-name' content='API-DOCS'>
+<meta name='og:title' content='APIDOCS'>
+    <title>APIDOCS</title>
+<link rel="icon" href="https://keyherlyswar.x10.mx/IMG_20241229_124750_492.jpg" />
+    <link rel="shortcut icon" href="https://keyherlyswar.x10.mx/IMG_20241229_124750_492.jpg" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="57x57"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="60x60"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="72x72"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="76x76"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="114x114"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="120x120"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="144x144"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="152x152"/>
+            <link rel="apple-touch-icon" href="https://i.imgur.com/s9CSOZ7.jpeg" sizes="180x180"/>
+   <link rel="preconnect" href="https://keyherlyswar.x10.mx:443/">
+    <link rel="manifest" href="site.html"/>
+ <link rel="dns-prefetch" href="https://keyherlyswar.x10.mx:443/"/>
+<link rel="apple-touch-icon" sizes="180x180" href="https://keyherlyswar.x10.mx/IMG_20241229_124750_492.jpg"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "url": "https://keyherlyswar.x10.mx:443",
+                "logo": "https://keyherlyswar.x10.mx/IMG_20241229_124750_492.jpg"
+            }</script>
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: {
+                            bg: '#1a1a1a',
+                            secondary: '#121212',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+<!-- <body>
+<div class="loading" id="loading">
+        <img src="/duck.gif" alt="Loading..." >
+    </div>
+    <script>
+        setTimeout(() => {         
+document.getElementById('loading').style.display = 'none';
+        }, 3500);
+    </script> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap');
+
+        body {
+           opacity: 0;
+           animation: fadeIn 0.8s ease-in-out     forwards;  
+           overflow-x: hidden;
+         }
+
+      @keyframes fadeIn {
+           from {
+           opacity: 0;
+        }
+          to {
+           opacity: 1;
+          }
+       }  
+
+        .loading { position: absolute; display: flex;  justify-content: center; align-items: center; height: 100%; width: 110%; } img { width: 150px; height: auto; }
+
+        #sidebar {
+            transition: transform 0.3s ease-in-out;
+            overflow-y: auto;
+            height: 100vh;
+        }
+
+        #main-content {
+            transition: margin-left 0.3s ease-in-out;
+        }
+
+        @media (min-width: 768px) {
+            #sidebar {
+                transform: translateX(0) !important;
+            }
+            #main-content {
+                margin-left: 20rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            #sidebar {
+                transform: translateX(-100%);
+            }
+            body.sidebar-open #sidebar {
+                transform: translateX(0);
+            }
+            body.sidebar-open #overlay {
+                display: block;
+            }
+        }
+
+      .running-cat {
+          position: fixed;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 9999;
+  }
+    </style>
+</head>
+<body class="min-h-screen font-sans flex bg-gray-50 text-gray-900 dark:bg-dark-bg dark:text-white transition-colors duration-200">
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-20 hidden md:hidden"></div>
+    <script src="//thanhdieu.com/files/autoplay-music@v1.0.0.js" data-n-g='{"made": "thanhdieu"}'></script>
+
+    <aside id="sidebar" class="fixed inset-y-0 left-0 w-80 bg-white dark:bg-dark-secondary z-30 border-r border-gray-200 dark:border-gray-800">
+        <div class="flex flex-col h-full">
+            <div class="p-4 border-b border-gray-200 dark:border-gray-800">
+                <h2 class="text-lg font-semibold">HERLYS API</h2>
+            </div>
+            <div class="p-4">
+                <input type="text" id="api-search" placeholder="Tìm kiếm Apis..." class="w-full p-2 border rounded-md dark:bg-gray-800 dark:border-gray-600 dark:text-white dark:placeholder-gray-400">
+            </div>
+            <div class="flex-grow overflow-y-auto p-4" id="sidebar-content"></div>
+        </div>
+    </aside>
+
+    <div id="main-content" class="flex-1 flex flex-col min-h-screen">
+        <header class="bg-white dark:bg-dark-secondary border-b border-gray-200 dark:border-gray-800 py-3 transition-colors duration-200">
+            <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+                <button id="menuButton" class="hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-md md:hidden" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+                <h1 class="text-lg font-semibold">Dashboard</h1>
+                <button id="themeToggle" class="hover:bg-gray-100 dark:hover:bg-gray-800 p-2 rounded-md" aria-label="Toggle theme">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+<!-- <body> -->
+        <main class="flex-grow overflow-y-auto">
+            <div class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+                <section class="bg-white dark:bg-dark-secondary rounded-lg p-6 space-y-4 shadow-sm">
+                    <h2 class="text-xl font-semibold">Welcome to HERLYS API</h2>
+                    <p class="text-sm text-gray-600 dark:text-gray-300">
+                        Một dịch vụ API và miễn phí, cung cấp nhiều tính năng đa dạng cho các idol.
+                    </p>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-semibold">Hướng Dẫn Cho Người Mới:</h3>
+                        <ol class="list-decimal list-inside text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                            <li>Chọn danh mục API từ thanh bên</li>
+                            <li>Chọn endpoint mong muốn</li>
+                            <li>Xem tài liệu của endpoint</li>
+                            <li>Gửi yêu cầu GET đến URL của endpoint</li>
+                            <li>Xử lý phản hồi JSON</li>
+                        </ol>
+                    </div>
+                    <div class="space-y-2 mt-6 pt-6 border-t border-gray-200 dark:border-gray-700">
+                        <h3 class="text-lg font-semibold">Điều khoản dịch vụ:</h3>
+                        <ol class="list-decimal list-inside text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                            <li>Không gửi quá nhiều yêu cầu.</li>
+                            <li>Chủ sở hữu có thể thay đổi điều khoản của API này bất cứ lúc nào để duy trì chất lượng API.</li>
+                            <li>Xin đừng tấn công nó, điều đó sẽ gây hại.</li>
+                            <li>Chủ sở hữu không chịu trách nhiệm về những gì bạn làm khi sử dụng trang web này.</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <div class="grid gap-4 md:grid-cols-2">
+                    <div class="bg-white dark:bg-dark-secondary rounded-lg p-4 shadow-sm">
+                        <div class="flex items-center gap-2 text-blue-500 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                            </svg>
+                            <h3 class="text-sm text-gray-600 dark:text-gray-400">Total Endpoints</h3>
+                        </div>
+                        <p class="text-2xl font-bold total-endpoints">Loading...</p>
+                    </div>
+                    <div class="bg-white dark:bg-dark-secondary rounded-lg p-4 shadow-sm">
+                        <div class="flex items-center gap-2 text-blue-500 mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                            <h3 class="text-sm text-gray-600 dark:text-gray-400">Total Categories</h3>
+                        </div>
+                        <p class="text-2xl font-bold total-categories">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-white dark:bg-dark-secondary shadow-sm mt-auto border-t border-gray-200 dark:border-gray-800">
+            <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+                <p class="text-center text-sm text-gray-600 dark:text-gray-400">
+                    &copy; <span id="current-year"></span> Herlys. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = {
+                menuButton: document.getElementById('menuButton'),
+                sidebar: document.getElementById('sidebar'),
+                overlay: document.getElementById('overlay'),
+                themeToggle: document.getElementById('themeToggle'),
+                html: document.documentElement
+            };
+
+            initializeTheme(elements.html);
+
+            setupSidebarListeners(elements);
+            setupThemeToggle(elements.themeToggle, elements.html);
+        });
+
+        function initializeTheme(html) {
+            const savedTheme = localStorage.getItem('color-theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                html.classList.add('dark');
+            } else {
+                html.classList.remove('dark');
+            }
+        }
+
+        function setupSidebarListeners({ menuButton, sidebar, overlay }) {
+            menuButton.addEventListener('click', () => {
+                sidebar.classList.toggle('-translate-x-full');
+                overlay.classList.toggle('hidden');
+            });
+
+            overlay.addEventListener('click', () => {
+                sidebar.classList.add('-translate-x-full');
+                overlay.classList.add('hidden');
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    sidebar.classList.remove('-translate-x-full');
+                    overlay.classList.add('hidden');
+                }
+            });
+        }
+
+ function setupThemeToggle(themeToggle, html) {
+            themeToggle.addEventListener('click', () => {
+                html.classList.toggle('dark');
+                localStorage.setItem('color-theme',
+                    html.classList.contains('dark') ? 'dark' : 'light'
+                );
+            });
+        }
+    </script>
+    <script>
+        class HerlysDashboard {
+            constructor() {
+                this.apiCache = new Map();
+                this.sidebar = document.getElementById('sidebar');
+                this.mainContent = document.getElementById('main-content');
+                this.overlay = document.getElementById('overlay');
+                this.menuButton = document.getElementById('menuButton');
+                this.searchInput = document.getElementById('api-search');
+                this.themeToggle = document.getElementById('themeToggle');
+
+                this.isSidebarOpen = false;
+                this.isDesktop = window.innerWidth >= 768;
+
+                this.init();
+            }
+
+            init() {
+                this.startDateTimeUpdate();
+                this.initSidebar();
+                this.initSearch();
+                this.initResizeHandler();
+                this.setupSidebarToggle();
+                this.setupThemeToggle();
+            }
+
+            startDateTimeUpdate() {
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            }
+
+            async initSidebar() {
+                const sidebarContent = document.getElementById('sidebar-content');
+                const totalEndpointsElement = document.querySelector('.total-endpoints');
+                const totalCategoriesElement = document.querySelector('.total-categories');
+
+                try {
+                    const apiList = this.getApiList();
+                    const categories = this.groupByCategory(apiList);
+                    this.renderCategories(categories, sidebarContent);
+
+                    const totalEndpoints = apiList.length;
+                    const totalCategories = Object.keys(categories).length;
+
+                    totalEndpointsElement.textContent = totalEndpoints;
+                    totalCategoriesElement.textContent = totalCategories;
+
+                    this.setupAccordionListeners();
+                } catch (error) {
+                    console.error('Sidebar initialization error:', error);
+                    sidebarContent.innerHTML = '<p class="text-red-500">Failed to load API categories</p>';
+                }
+            }
+
+            getApiList() {
+                return [
+    { "url": "anhgirl.php", "name": "Ảnh Gái", "description": "Link Ảnh Gái", "category": "Ảnh" },
+    { "url": "anhanime.php", "name": "Ảnh Anime", "description": "Link Ảnh Anime", "category": "Ảnh" },
+    { "url": "anhdu.php", "name": "Ảnh Dú Gái", "description": "Link Ảnh Dú", "category": "Ảnh" },
+    { "url": "anhlon.php", "name": "Ảnh Lồn Gái", "description": "Link Ảnh Lồn Gái", "category": "Ảnh" },
+    { "url": "anhnude.php", "name": "Ảnh Nude", "description": "Link Ảnh Khoả Thân", "category": "Ảnh" },
+    { "url": "gaitt.php", "name": "Video Gái Tiktok", "description": "Link Gái Tiktok", "category": "Video" },
+    { "url": "videosex.php", "name": "Video Sex", "description": "Link Video Sex", "category": "Video" },
+    { "url": "videogai.php", "name": "Video Gái", "description": "Link Video Gái", "category": "Video" },
+    { "url": "getinfofb.php?uid=", "name": "Get Info Facebook", "description": "Lấy Thông Tin Tài Khoản Facebook", "category": "Get INFO" },
+    { "url": "getinfoyt.php?username=", "name": "Get Info Youtube", "description": "Lấy Thông Tin Tài Khoản Youtube", "category": "Get INFO" },
+    { "url": "getinfoinsta.php?uid=", "name": "Get Info Instagram", "description": "Lấy Thông Tin Tài Khoản Instagram", "category": "Get INFO" },
+    { "url": "getinforoblox.php?username=", "name": "Get Info Roblox", "description": "Lấy Thông Tin Tài Khoản Roblox", "category": "Get INFO" },
+    { "url": "gpt-4o-pro.php?ask=hi", "name": "ChatGpt 4o pro", "description": "ChatGpt 4o pro",
+    "category": "AI" },
+    { "url": "getinfotiktok.php?username=", "name": "Get Info TikTok", "description": "Lấy Thông Tin Tài Khoản TikTok", "category": "Get INFO" },
+    { "url": "infovideott.php?url=", "name": "Get Info Video Tiktok", "description": "Lấy Thông Tin Video Tiktok", "category": "Get INFO" },
+    { "url": "getinfozalo.php?phone=", "name": "Get Info Zalo", "description": "Lấy Thông Tin Tài Khoản Zalo", "category": "Get INFO" },
+    { "url": "getinfocapcut.php?url=", "name": "Get Info Capcut", "description": "Lấy Thông Tin Tài Khoản Capcut", "category": "Get INFO" },
+    { "url": "getinfoff.php?id=", "name": "Get Info Free Fire", "description": "Lấy Thông Tin Tài Khoản Free Fire", "category": "Get INFO" },
+    { "url": "getinfogithub.php?username=", "name": "Get Info Github", "description": "Lấy Thông Tin Tài Khoản Github", "category": "Get INFO" },
+    { "url": "uptimecanvas.php?instag=qhcto&ghub=Quanhau210&fb=Quan Hậu&hours=1&minutes=0&seconds=0&botname=Herlys War", "name": "Uptime Canvas", "description": "Kiểm tra thời gian hoạt động của hệ thống", "category": "Canvas" },
+    { "url": "weather.php?q=", "name": "Weather", "description": "Lấy thông tin thời tiết", "category": "Công cụ" },
+    { "url": "checkip.php?ip=", "name": "Check IP", "description": "Kiểm tra thông tin IP", "category": "Công cụ" },
+    { "url": "countryinfo.php?name=", "name": "Country Info", "description": "Lấy thông tin quốc gia", "category": "Công cụ" },
+    { "url": "ggmap.php?text=", "name": "Google Maps", "description": "Tra cứu bản đồ Google", "category": "Công cụ" },
+
+    { "url": "sim.php?q=", "name": "sim", "description": "Trả lời tin nhắn tự động", "category": "Sim" },
+    { "url": "learnsim.php?teach=true&q=chào bạn&a=chào con cặc ba mày", "name": "Dạy Sim", "description": "Dạy Sim Nói Chuyện", "category": "Sim" },
+    
+    { "url": "spamngl.php?username=&message=&count=", "name": "Spam NGL", "description": "Spam tin nhắn NGL", "category": "Khác" },
+    { "url": "phatnguoi.php?bienso=", "name": "Phát Hiện Phạt Nguội", "description": "Phát hiện Phạt Nguội", "category": "Khác" },
+
+    { "url": "searchyt.php?query=", "name": "Tìm Kiếm YouTube", "description": "Tìm kiếm video trên YouTube", "category": "Tra cứu" },
+    { "url": "fullpostyt.php?username=", "name": "Bài Đăng YouTube", "description": "Lấy toàn bộ nội dung bài đăng YouTube", "category": "Tra cứu" },
+    { "url": "searchusertiktok.php?keywords=", "name": "Tìm Kiếm TikTok", "description": "Tìm kiếm người dùng TikTok", "category": "Tra cứu" },
+    { "url": "getuidfb.php?link=", "name": "Tìm ID Fb", "description": "Tìm ID tài khoản Fb", "category": "Tra cứu" },
+
+    { "url": "downall.php?link=", "name": "Tải Xuống link video", "description": "Tải xuống video tất cả link", "category": "Tải xuống" },
+    { "url": "downallinone.php?url=", "name": "Tải Xuống Video All Link", "description": "Tải xuống nhiều định dạng", "category": "Tải xuống" },
+    { "url": "downdriver.php?link=", "name": "Tải Google Drive", "description": "Tải file từ Google Drive", "category": "Tải xuống" },
+    { "url": "dlyt.php?url=", "name": "Tải Video YouTube", "description": "Tải video từ YouTube", "category": "Tải xuống" },
+    { "url": "mp3yt.php?url=", "name": "Tải Nhạc YouTube", "description": "Tải nhạc MP3 từ YouTube", "category": "Tải xuống" },
+
+    { "url": "regmcr.php", "name": "Reg Microsoft", "description": "Tự động tạo tài khoản Microsoft", "category": "Reg Tài Khoản" },
+    { "url": "reghotmail.php", "name": "Reg Hotmail", "description": "Tự động tạo tài khoản Hotmail", "category": "Reg Tài Khoản" },
+    { "url": "reglq.php", "name": "Reg Liên Quân", "description": "Tự động tạo tài khoản Liên Quân", "category": "Reg Tài Khoản" },
+    { "url": "cap.php?url=", "name": "cap màn hình", "description": "Chụp Màn Hình Website", "category": "Khác" },
+
+    { "url": "avtfb.php", "name": "Avatar Facebook", "description": "Lấy avatar Facebook", "category": "Khác" },
+
+    { "url": "dovui.php", "name": "Đố Vui", "description": "Trò chơi đố vui", "category": "Giải trí" },
+    { "url": "Taixiu/register.php?username=&password=", "name": "Đăng Ký Tài Khoản", "description": "Đăng Ký Tài Khoản Tài Xỉu", "category": "Tài Xỉu" },
+    { "url": "Taixiu/playgame.php?username=&password=&taixiu=&cuoc=", "name": "Đăng Nhập Và Chơi", "description": "Đăng Nhập Và Chơi Tài Xỉu", "category": "Tài Xỉu" },
+    { "url": "Taixiu/info.php?username=", "name": "Check Thông Tin", "description": "Check Tài Khoản Tài Xỉu", "category": "Tài Xỉu" },
+    { "url": "Taixiu/changepass.php?username=&password=&newpass=", "name": "Đổi Mật Khẩu", "description": "Đổi Mật Khẩu Tài Khoản Tài Xỉu", "category": "Tài Xỉu" },
+    { "url": "Taixiu/giftmoney.php?username=&password=&tknhan=&howmuch=", "name": "Tặng Tiền", "description": "Tặng Tiền Cho Tài Khoản Khác", "category": "Tài Xỉu" },
+    { "url": "Taixiu/receivemoney.php?username=&password=", "name": "Nhận Tiền", "description": "Nhận Tiền Sau Mỗi 24h", "category": "Tài Xỉu" },
+    { "url": "Taixiu/topmoney.php", "name": "Top 20 Đại Gia", "description": "Top 20 đại gia", "category": "Tài Xỉu" }
+    
+];
+            }
+
+            groupByCategory(apiList) {
+                return apiList.reduce((acc, api) => {
+                    (acc[api.category] = acc[api.category] || []).push(api);
+                    return acc;
+                }, {});
+            }
+
+            renderCategories(categories, container) {
+                Object.entries(categories).sort((a, b) => a[0].localeCompare(b[0])).forEach(([category, items]) => {
+                    if (items.length > 0) {
+                        container.appendChild(this.createAccordion(category, items));
+                    }
+                });
+            }
+
+            createAccordion(category, items) {
+                const accordion = document.createElement('div');
+                accordion.className = 'accordion mb-2';
+                accordion.innerHTML = `
+                    <button class="accordion-header w-full text-left flex justify-between items-center p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md" aria-expanded="false">
+                        <span class="font-medium">${this.capitalizeFirstLetter(category)}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-gray-400 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div class="accordion-content hidden pl-4 space-y-1">
+                        ${items.sort((a, b) => a.name.localeCompare(b.name)).map(item => `
+                            <div class="api-item p-2 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-md cursor-pointer" onclick="dashboard.useApi('${item.url}')">
+                                <div class="text-sm">${this.capitalizeFirstLetter(item.name)}</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">${item.description}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+                return accordion;
+            }
+
+
+            setupAccordionListeners() {            
+document.querySelectorAll('.accordion-header').forEach(header => {
+                    header.addEventListener('click', this.handleAccordionClick);
+                });
+            }
+
+            handleAccordionClick(e) {
+                e.stopPropagation();
+                const header = e.currentTarget;
+                const content = header.nextElementSibling;
+                const arrow = header.querySelector('svg');
+                const isExpanded = header.getAttribute('aria-expanded') === 'true';
+
+                document.querySelectorAll('.accordion-header[aria-expanded="true"]').forEach(otherHeader => {
+                    if (otherHeader !== header) {
+                        otherHeader.setAttribute('aria-expanded', 'false');
+                        otherHeader.nextElementSibling.classList.add('hidden');
+                        otherHeader.querySelector('svg').classList.remove('rotate-180');
+                    }
+                });
+
+                header.setAttribute('aria-expanded', !isExpanded);
+                content.classList.toggle('hidden');
+                arrow.classList.toggle('rotate-180');
+            }
+
+            setupSidebarToggle() {
+                this.menuButton.addEventListener('click', () => this.toggleSidebar());
+                this.overlay.addEventListener('click', () => this.closeSidebar());
+            }
+
+            toggleSidebar() {
+                if (!this.isDesktop) {
+                    this.isSidebarOpen = !this.isSidebarOpen;
+                    this.updateSidebarState();
+                }
+            }
+
+            closeSidebar() {
+                if (!this.isDesktop) {
+                    this.isSidebarOpen = false;
+                    this.updateSidebarState();
+                }
+            }
+
+            updateSidebarState() {
+                if (!this.isDesktop) {
+                    document.body.classList.toggle('sidebar-open', this.isSidebarOpen);
+                    this.overlay.classList.toggle('hidden', !this.isSidebarOpen);
+                    this.sidebar.style.transform = this.isSidebarOpen ? 'translateX(0)' : 'translateX(-100%)';
+                }
+            }
+
+            initSearch() {
+                this.searchInput.addEventListener('input', this.handleSearch.bind(this));
+            }
+
+            handleSearch(event) {
+                const searchTerm = event.target.value.toLowerCase();
+                const isSearchEmpty = searchTerm === '';
+
+                document.querySelectorAll('.accordion').forEach(accordion => {
+                    const items = accordion.querySelectorAll('.api-item');
+                    let hasVisibleItems = false;
+
+                    items.forEach(item => {
+                        const name = item.querySelector('.text-sm').textContent.toLowerCase();
+                        const description = item.querySelector('.text-xs').textContent.toLowerCase();
+
+                        if (name.includes(searchTerm) || description.includes(searchTerm)) {
+                            item.style.display = '';
+                            hasVisibleItems = true;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    if (hasVisibleItems) {
+                        accordion.style.display = '';
+                        accordion.querySelector('.accordion-header').setAttribute('aria-expanded', 'true');
+                        accordion.querySelector('.accordion-content').classList.remove('hidden');
+                        accordion.querySelector('.accordion-header svg').classList.add('rotate-180');
+                    } else {
+                        accordion.style.display = 'none';
+                    }
+
+                    if (isSearchEmpty) {
+                        accordion.querySelector('.accordion-header').setAttribute('aria-expanded', 'false');
+                        accordion.querySelector('.accordion-content').classList.add('hidden');
+                        accordion.querySelector('.accordion-header svg').classList.remove('rotate-180');
+                    }
+                });
+            }
+
+            initResizeHandler() {
+                window.addEventListener('resize', () => {
+                    const wasDesktop = this.isDesktop;
+                    this.isDesktop = window.innerWidth >= 768;
+
+                    if (wasDesktop !== this.isDesktop) {
+                        this.updateSidebarState();
+                    }
+                });
+            }
+
+            setupThemeToggle() {
+                this.themeToggle.addEventListener('click', () => {
+                    setupThemeToggle();
+                });
+            }
+
+            capitalizeFirstLetter(string) {
+                return string.charAt(0).toUpperCase() + string.slice(1);
+            }
+
+            useApi(endpoint) {
+                window.open(endpoint, '_blank', 'noopener,noreferrer');
+            }
+        }
+ document.addEventListener('DOMContentLoaded', () => {
+            window.dashboard = new HerlysDashboard();
+        });   
+    </script>
+<body>   
+<script src="../cdn.jsdelivr.net/npm/howler%402.2.4/dist/howler.min.js"></script>
+    <script>
+        let tracks = [
+"https://i.imgur.com/kk4B7S1.mp4",
+"https://raw.github.com/Cliffvincent/Jahzb/main/1000002392.mp4", "https://raw.github.com/Cliffvincent/Jahzb/main/received_1118187456315892.mp3",
+"https://raw.github.com/Cliffvincent/Jahzb/main/received_1295311408321448.mp3",
+"https://raw.github.com/Cliffvincent/Jahzb/main/received_1620148122270392.mp3",
+"https://raw.github.com/Cliffvincent/Jahzb/main/received_2063787320708541.mp3",
+"https://raw.github.com/Cliffvincent/Jahzb/main/received_3851669858409525.mp3",
+"https://raw.github.com/Cliffvincent/Jahzb/main/music.mp3",
+"https://i.imgur.com/eHiNMKc.mp4",
+"https://raw.github.com/Cliffvincent/Jahzb/main/Birthday Sex.mp3"
+        ];
+
+        let randomTrack = tracks[Math.floor(Math.random() * tracks.length)];
+
+        let sound = new Howl({
+            src: [randomTrack],
+            autoplay: true,
+            loop: false,
+            format: ["mp3"],
+            volume: 1,
+            onend: () => {},
+        });
+
+        sound.play();
+</script>
+<script>
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12') {
+      e.preventDefault();
+    }
+    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+      e.preventDefault();
+    }
+    if (e.ctrlKey && e.key === 'u') {
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+
+<!-- Mirrored from betadash-api-swordslush.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2017], Thu, 30 Jan 2025 17:47:37 GMT -->
+</html>
+
+<!-- CREDITS- SOURCE: LANCE -->
+<!-- MODIFIED: Nov 24, 2024 -->
