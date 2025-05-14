@@ -1,0 +1,38 @@
+{
+  "name": "Herlys API's",
+  "version": "v2.0",
+  "description": "A powerful and free API service offering a wide range of features for developers.",
+  "header": {
+    "status": "Online!",
+    "imageSrc": [
+      "https://i.imgur.com/HpNkRoK.gif",
+      "https://i.imgur.com/g28BRHU.gif",
+      "https://wallpaperaccess.com/full/9336992.gif"
+    ],
+    "imageSize": {
+      "mobile": "80%",
+      "tablet": "40%",
+      "desktop": "40%"
+    }
+  },
+  "apiSettings": {
+    
+  },
+  "links": [
+    
+    {
+      "name": "Contact Me",
+      "url": "https://keyherlyswar.x10.mx/"
+    }
+  ],
+  "notifications": [
+    {
+      "title": "Welcome to API Dashboard",
+      "message": "Explore our APIs and integrate them into your projects."
+    },
+    {
+      "title": "Notice",
+      "message": "Explore the sidebar for API Documentation."
+    }
+  ]
+}

@@ -1,0 +1,755 @@
+{
+    "categories": [
+        {
+            "name": "GET INFO",
+            "items": [
+                {
+                    "name": "Get Info Liên Quân Mobile",
+                    "desc": "Get info about Liên Quân Mobile",
+                    "path": "/Apidocs/getinfoaov.php?token=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Capcut",
+                    "desc": "Get info about Capcut",
+                    "path": "/Apidocs/getinfocapcut.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Channel Telegram",
+                    "desc": "Get info about Telegram channel",
+                    "path": "/Apidocs/getinfotelegram.php?username=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Douyin (抖音)",
+                    "desc": "Get info about Douyin (抖音)",
+                    "path": "/Apidocs/getinfodouyin.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Facebook",
+                    "desc": "Get info about Facebook",
+                    "path": "/Apidocs/getinfofb.php?uid=4",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Facebook V2",
+                    "desc": "Get info about Facebook V2",
+                    "path": "/Apidocs/getinfofbv2.php?uid=4",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Instagram",
+                    "desc": "Get info about Instagram",
+                    "path": "/Apidocs/getinfoinsta.php?username=qhcto",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info TikTok",
+                    "desc": "Get info about TikTok",
+                    "path": "/Apidocs/getinfotiktok.php?username=_qhuaaun_",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Roblox",
+                    "desc": "Get info about Roblox",
+                    "path": "/Apidocs/getinforoblox.php?username=trqanhau10",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Telegram User",
+                    "desc": "Get info about Telegram user",
+                    "path": "/Apidocs/getinfotele.php?username=Quanhau2010",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Youtube",
+                    "desc": "Get info about Youtube",
+                    "path": "/Apidocs/getinfoyt.php?username=HerlysTool",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Zalo",
+                    "desc": "Get info about Zalo",
+                    "path": "/Apidocs/getinfozalo.php?phone=0794268460",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Info Github",
+                    "desc": "Get info about Github",
+                    "path": "/Apidocs/getinfogithub.php?username=Quanhau2010",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+                
+
+            ]
+        },
+        {
+            "name": "TIỆN ÍCH",
+            "items": [
+                {
+                    "name": "Get 2fa fb",
+                    "desc": "Get 2fa fb",
+                    "path": "/Apidocs/2fa.php?secret=WGADZESRTILJUCNFMYVBXPOHKQ",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Imgur",
+                    "desc": "up ảnh lấy link imgur",
+                    "path": "/Apidocs/imgur.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Proxy",
+                    "desc": "Get proxy",
+                    "path": "/Apidocs/proxy.php?count=10&down=false",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Spam Nglink",
+                    "desc": "Spam Nglink",
+                    "path": "/Apidocs/spamngl.php?username=&message=&count=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Spam SMS",
+                    "desc": "Spam Số Điện Thoại",
+                    "path": "/Apidocs/spamsms.php?sdt=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Check Uid FB",
+                    "desc": "Check live/die facebook",
+                    "path": "/Apidocs/checkuid.php?uid=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get appsate fb",
+                    "desc": "Get appsate fb",
+                    "path": "Apidocs/appstate.php?username=&password=&_2fa=0",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get token 6V7 fb",
+                    "desc": "Get token fb",
+                    "path": "/Apidocs/token.php?username=&password=&_2fa=0",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Google Map",
+                    "desc": "Google Map",
+                    "path": "/Apidocs/ggmap.php?text=Landmark 81",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Avt Fb",
+                    "desc": "Get avt fb",
+                    "path": "/Apidocs/avtfb.php?uid=4",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Check Biển Số Xe Phạt Nguội",
+                    "desc": "Check Biển Số Xe Phạt Nguội",
+                    "path": "/Apidocs/aphatnguoi.php?bienso=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "screenshot website",
+                    "desc": "screenshot website",
+                    "path": "/Apidocs/cap.php?url=https://keyherlyswar.x10.mx",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Weather Forecast",
+                    "desc": "Dự báo thời tiết",
+                    "path": "/Apidocs/weather.php?q=Hà Nội",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Check Ip",
+                    "desc": "Check Địa Chỉ Ip",
+                    "path": "/Apidocs/checkip.php?ip=1.1.1.1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Country info",
+                    "desc": "Thông tin quốc gia",
+                    "path": "/Apidocs/countryinfo.php?name=Việt Nam",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Đếm Ngược Ngày Lễ",
+                    "desc": "Đếm Ngược Ngày Lễ",
+                    "path": "/Apidocs/demngay.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            
+
+            ]   
+        },
+        {
+            "name": "DOWNLOAD",
+            "items": [
+                {
+                    "name": "Download mp4 youtube",
+                    "desc": "Tải xuống video youtube",
+                    "path": "/Apidocs/dlyt.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Download TikTok",
+                    "desc": "Tải xuống video TikTok",
+                    "path": "/Apidocs/ttdll.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Download Spotify",
+                    "desc": "Tải xuống nhạc Spotify",
+                    "path": "/Apidocs/spotifydl.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                
+                {
+                    "name": "Download Twitter(X)",
+                    "desc": "Tải xuống video Twitter(X)",
+                    "path": "/Apidocs/twitterdl.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                
+                {
+                    "name": "Download mp3 youtube",
+                    "desc": "Tải xuống âm thanh youtube",
+                    "path": "/Apidocs/ytmp3.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Download File Driver",
+                    "desc": "Tải xuống file driver",
+                    "path": "/Apidocs/downdriver.php?link=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Get Id user Youtube",
+                    "desc": "Lấy id user youtube",
+                    "path": "/Apidocs/getidyt.php?username=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Playlist Youtube",
+                    "desc": "Lấy danh sách video trong playlist youtube",
+                    "path": "/Apidocs/playlistyt.php?id=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Full Post Youtube",
+                    "desc": "Lấy toàn bộ bài viết youtube",
+                    "path": "/Apidocs/fullpostyt.php?username=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                                {
+                    "name": "Download Video Reel Instagram",
+                    "desc": "Tải xuống video reel instagram",
+                    "path": "/Apidocs/downloadreelinsta.php?url=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+
+            ]
+        },
+        {
+            "name": "SEARCH",
+            "items": [
+                {
+                    "name": "Search Spotify",
+                    "desc": "Tìm kiếm nhạc Spotify",
+                    "path": "/Apidocs/searchspotify.php?track=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Search Video TikTok",
+                    "desc": "Tìm kiếm video TikTok",
+                    "path": "/Apidocs/ttsearch.php?query=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Search Pinterest",
+                    "desc": "Tìm kiếm hình ảnh Pinterest",
+                    "path": "/Apidocs/ptrsearch.php?text=cosplay",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Search Video Youtube",
+                    "desc": "Tìm kiếm video youtube",
+                    "path": "/Apidocs/searchyt.php?query=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Search Video Reel Instagram",
+                    "desc": "Tìm kiếm video reel instagram",
+                    "path": "/Apidocs/searchreelinsta.php?query=",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Search Video Douyin (抖音)",
+                    "desc": "Tìm kiếm video douyin (抖音)",
+                    "path": "/Apidocs/searchdouyin.php?query=cosplay",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        },
+        {
+            "name": "IMAGE",
+            "items": [
+                {
+                    "name": "Image Girl",
+                    "desc": "Hình ảnh gái xinh",
+                    "path": "/Apidocs/anhgirl.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Loli",
+                    "desc": "Hình ảnh Loli",
+                    "path": "/Apidocs/loli.php?type=random",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Anime",
+                    "desc": "Hình ảnh anime",
+                    "path": "/Apidocs/anhanime.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Butt Squeeze",
+                    "desc": "Hình ảnh bóp mông",
+                    "path": "/Apidocs/anhbopmong.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Breast Squeeze",
+                    "desc": "Hình ảnh bóp vú",
+                    "path": "/Apidocs/anhbopvu.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Dick",
+                    "desc": "Hình ảnh dương vật",
+                    "path": "/Apidocs/anhcu.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Girl Japan",
+                    "desc": "Hình ảnh gái nhật",
+                    "path": "/Apidocs/anhgainhat.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Girl Sexy",
+                    "desc": "Hình ảnh gái sexy",
+                    "path": "/Apidocs/anhgirlsexy.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Hana",
+                    "desc": "Hình ảnh Hana",
+                    "path": "/Apidocs/anhhana.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Insgram",
+                    "desc": "Hình ảnh Insgram",
+                    "path": "/Apidocs/anhinstagram.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Jack",
+                    "desc": "Hình ảnh Jack",
+                    "path": "/Apidocs/anhjack.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Butt",
+                    "desc": "Hình ảnh mông",
+                    "path": "/Apidocs/anhmong.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Abdominal Muscles",
+                    "desc": "Hình ảnh cơ bụng",
+                    "path": "/Apidocs/anhsaumui.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Boy",
+                    "desc": "Hình ảnh trai đẹp",
+                    "path": "/Apidocs/anhtrai.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Twitter",
+                    "desc": "Hình ảnh Twitter",
+                    "path": "/Apidocs/anhtwitter.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Boobs",
+                    "desc": "Hình ảnh ngực",
+                    "path": "/Apidocs/anhdu.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Pussy",
+                    "desc": "Hình ảnh âm đạo",
+                    "path": "/Apidocs/anhlon.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Image Girl Nude",
+                    "desc": "Hình ảnh gái nude",
+                    "path": "/Apidocs/anhnude.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        },
+        {
+            "name": "VIDEO",
+            "items": [
+                {
+                    "name": "Video Sex",
+                    "desc": "Video Sex",
+                    "path": "/Apidocs/videosex.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Video Girl TikTok",
+                    "desc": "Video Gái TikTok",
+                    "path": "/Apidocs/gaitt.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Video Anime",
+                    "desc": "Video Anime",
+                    "path": "/Apidocs/videoanime.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Video Girl",
+                    "desc": "Video gái xinh",
+                    "path": "/Apidocs/videogai.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        },
+        {
+            "name": "GAME",
+            "items": [
+                {
+                    "name": "Đố vui trí tuệ",
+                    "desc": "Đố vui trí tuệ",
+                    "path": "/Apidocs/dovui.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        },
+        {
+    "name": "TÀI XỈU",
+    "items": [
+        {
+            "name": "Đăng ký tài khoản",
+            "desc": "Tạo tài khoản mới để chơi Tài Xỉu",
+            "path": "/Apidocs/Taixiu/register.php?username=demo&password=123456",
+            "author": "Quanhau2010",
+            "method": "get"
+        },
+        {
+            "name": "Chơi Tài Xỉu",
+            "desc": "Chơi game Tài Xỉu với lựa chọn tài hoặc xỉu",
+            "path": "/Apidocs/Taixiu/playgame.php?username=demo&password=123456&taixiu=tai&cuoc=100",
+            "author": "Quanhau2010",
+            "method": "get"
+        },
+        {
+            "name": "Thông tin người chơi",
+            "desc": "Xem thông tin tài khoản người chơi",
+            "path": "/Apidocs/Taixiu/info.php?username=demo",
+            "author": "Quanhau2010",
+            "method": "get"
+        },
+        {
+            "name": "Đổi mật khẩu",
+            "desc": "Thay đổi mật khẩu tài khoản người chơi",
+            "path": "/Apidocs/Taixiu/changepass.php?username=demo&password=123456&newpass=654321",
+            "author": "Quanhau2010",
+            "method": "get"
+        },
+        {
+            "name": "Tặng tiền",
+            "desc": "Tặng tiền từ tài khoản này sang tài khoản khác",
+            "path": "/Apidocs/Taixiu/giftmoney.php?username=demo&password=123456&tknhan=nguoikhac&howmuch=500",
+            "author": "Quanhau2010",
+            "method": "get"
+        },
+        {
+            "name": "Nhận tiền",
+            "desc": "Nhận tiền (có thể từ hệ thống hoặc sự kiện)",
+            "path": "/Apidocs/Taixiu/receivemoney.php?username=demo&password=123456",
+            "author": "Quanhau2010",
+            "method": "get"
+        }
+        
+    ]
+},
+        {
+            "name": "AI",
+            "items": [
+                {
+                    "name": "Chat Gpt 4o Pro",
+                    "desc": "Chat Gpt 4o Pro",
+                    "path": "/Apidocs/gpt-4o-pro.php?ask=Hi",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "qwen-qwq-32b",
+                    "desc": "qwen-qwq-32b",
+                    "path": "/Apidocs/qwen-qwq-32b.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "deepseek-r1-distill-llama-70b",
+                    "desc": "deepseek-r1-distill-llama-70b",
+                    "path": "/Apidocs/deepseek-r1-distill-llama-70b.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "gemma2-9b-it",
+                    "desc": "gemma2-9b-it",
+                    "path": "/Apidocs/gemma2-9b-it.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "compound-beta",
+                    "desc": "compound-beta",
+                    "path": "/Apidocs/compound-beta.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "compound-beta-mini",
+                    "desc": "compound-beta-mini",
+                    "path": "/Apidocs/compound-beta-mini.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "distil-whisper-large-v3-en",
+                    "desc": "distil-whisper-large-v3-en",
+                    "path": "/Apidocs/distil-whisper-large-v3-en.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama-3.1-8b-instant",
+                    "desc": "llama-3.1-8b-instant",
+                    "path": "/Apidocs/llama-3.1-8b-instant.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama-3.3-70b-versatile",
+                    "desc": "llama-3.3-70b-versatile",
+                    "path": "/Apidocs/llama-3.3-70b-versatile.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama-guard-3-8b",
+                    "desc": "llama-guard-3-8b",
+                    "path": "/Apidocs/llama-guard-3-8b.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama3-70b-8192",
+                    "desc": "llama3-70b-8192",
+                    "path": "/Apidocs/llama3-70b-8192.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama3-8b-8192",
+                    "desc": "llama3-8b-8192",
+                    "path": "/Apidocs/llama3-8b-8192.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama-4-maverick-17b-128e-instruct",
+                    "desc": "llama-4-maverick-17b-128e-instruct",
+                    "path": "/Apidocs/llama-4-maverick-17b-128e-instruct.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama-4-scout-17b-16e-instruct",
+                    "desc": "llama-4-scout-17b-16e-instruct",
+                    "path": "/Apidocs/llama-4-scout-17b-16e-instruct.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "llama-guard-4-12b",
+                    "desc": "llama-guard-4-12b",
+                    "path": "/Apidocs/llama-guard-4-12b.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+
+                {
+                    "name": "mistral-saba-24b",
+                    "desc": "mistral-saba-24b",
+                    "path": "/Apidocs/mistral-saba-24b.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "whisper-large-v3",
+                    "desc": "whisper-large-v3",
+                    "path": "/Apidocs/whisper-large-v3.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "whisper-large-v3-turbo",
+                    "desc": "whisper-large-v3-turbo",
+                    "path": "/Apidocs/whisper-large-v3-turbo.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "playai-tts",
+                    "desc": "playai-tts",
+                    "path": "/Apidocs/playai-tts.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "playai-tts-arabic",
+                    "desc": "playai-tts-arabic",
+                    "path": "/Apidocs/playai-tts-arabic.php?q=hi&uid=1",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Deekseek",
+                    "desc": "Deekseek",
+                    "path": "/Apidocs/deekseek.php?query=Hi",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        },
+        {
+            "name": "CANVAS",
+            "items": [
+                {
+                    "name": "Uptime Robot",
+                    "desc": "Uptime Robot",
+                    "path": "/Apidocs/uptimecanvas.php?instag=qhcto&ghub=Quanhau210&fb=Quan Hậu&hours=1&minutes=0&seconds=0&botname=Herlys War",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        },
+        {
+            "name": "REG",
+            "items": [
+                {
+                    "name": "Reg Garena Of Valor",
+                    "desc": "Đăng ký tài khoản Garena Of Valor",
+                    "path": "/Apidocs/reglq.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                },
+                {
+                    "name": "Reg Hotmail",
+                    "desc": "Đăng ký tài khoản Hotmail",
+                    "path": "/Apidocs/reghotmail.php",
+                    "author": "Quanhau2010",
+                    "method": "get"
+                }
+            ]
+        }
+
+    ]
+}
