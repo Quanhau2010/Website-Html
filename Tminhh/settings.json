@@ -1,0 +1,24 @@
+{
+    "name": "Tminhh Api",
+    "version": "Tminhh UI",
+    "description": "Simple and Easy-to-Use API Documentation",
+    "apiSettings": {
+        "operator": "Minhdzvclll"
+    },
+    "links": [
+        {
+            "name": "Buy Api",
+            "url": "https://t.me/Quanhau2010"
+        }
+    ],
+    "notifications": [
+        {
+            "title": "Welcome to API Dashboard",
+            "message": "Explore our APIs and integrate them into your projects."
+        },
+        {
+            "title": "New Feature",
+            "message": "We've added support for WebSocket APIs. Check them out!"
+        }
+    ]
+}
