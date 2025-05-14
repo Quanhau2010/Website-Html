@@ -1,0 +1,26 @@
+{
+    "operator": "Quanhau2010",
+    "categories": [
+        {
+            "name": "TIỆN TÍCH",
+            "items": [
+                {
+                    "name": "Get Avt Fb",
+                    "desc": "Lấy Avatar Facebook",
+                    "path": "/avtfb?uid=",
+                    "author": "Minhdzvclll",
+                    "method": "get",
+                    "usage": 999999999
+                },
+                {
+                    "name": "Get Uid fb",
+                    "desc": "Lấy Uid Facebook",
+                    "path": "/getuidfb?link=",
+                    "author": "Minhdzvclll",
+                    "method": "get",
+                    "usage": 199393
+                }
+            ]
+        }
+    ]
+}
